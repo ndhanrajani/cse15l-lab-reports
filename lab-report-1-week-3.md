@@ -92,13 +92,13 @@ This will call the handleRequest method and with the parameter as url path as /s
 ## Problem 3
 
  1. ### Failure Inducing Input
-    ![FailInput3](FailInput3.jpg)
+    ![FailInput3](FailInput3.JPG)
 
  2. ### The Symptom(the failing test output)
-    ![Symptom3](Symptom3.jpg)
+    ![Symptom3](Symptom3.JPG)
 
  3. ### The Bug(the code fix needed)
-    ![BugCode3](BugCode3.jpg)
+    ![BugCode3](BugCode3.JPG)
 
 Explanation: 
 >  In the Symptom, we see the error was differed at position [0], which was expecting  <[a]> but found <[d]> for the ArrayList input as ["a","b","c","d"]. This is happening because the buggy code is always adding the string in to the new list at position 0. So it will not be in the same order in which order the strings are in orignal list.
@@ -110,13 +110,13 @@ Fix:
 ## Problem 2
 
  1. ### Failure Inducing Input
-    ![FailInput2](FailInput2.jpg)
+    ![FailInput2](FailInput2.JPG)
 
  2. ### The Symptom(the failing test output)
-    ![Symptom2](Symptom2.jpg)
+    ![Symptom2](Symptom2.JPG)
 
  3. ### The Bug(the code fix needed)
-    ![BugCode2](BugCode2.jpg)
+    ![BugCode2](BugCode2.JPG)
 
 Explanation: 
 >  In the Symptom, we see the error was differed at position [0], which was expecting  <7> but found <0> for the array input as [3.4.5.6.7]. This is happening because in code, we are creating a new array of the same size as orignal array and then we are assiging the value from new array to the orignal array and returning the orignal array. This way we will loose all the values from orignal array.
@@ -128,13 +128,13 @@ Fix:
 ## Problem 1
 
  1. ### Failure Inducing Input
-    ![FailInput1](FailInput1.jpg)
+    ![FailInput1](FailInput1.JPG)
 
  2. ### The Symptom(the failing test output)
-    ![Symptom1](Symptom1.jpg)
+    ![Symptom1](Symptom1.JPG)
 
  3. ### The Bug(the code fix needed)
-    ![BugCode1](BugCode1.jpg)
+    ![BugCode1](BugCode1.JPG)
 
 Explanation: 
 >  In the Symptom, we see the error was differed at position [3], which was expecting  4 but found 6 for the array input as [3.4.5.6.7]. This is happening because in code, we are changing the positions of numbers in array with its counter position in second half to make it reverse. But the problem will occure when we reach the half of array as we loose the array values of first half.
