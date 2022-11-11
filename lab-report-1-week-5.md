@@ -54,6 +54,8 @@ Example:
 Example:
 | S.No|Usage| Result| Remarks
    | ----------- | ----------- | ----------- |----------- |
+   
+   
    |1| find ./technical -perm 755 | Large list of files. | Findling all files with permission as 755|
    |2| find ./technical -perm u=rwx,g=rx,o=rx |Same large list of files as with 755 | Findling all files with permission user as rwx, group rx and others as rx.  [ r-read,w- write, x- executable]|
    |3| find ./technical ! -perm 755 | No result, as there is no such file | Findling all files which do not have permission as 755|
