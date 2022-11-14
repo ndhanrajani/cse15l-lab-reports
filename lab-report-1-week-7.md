@@ -36,23 +36,23 @@
 
 ## Two Potenital strategies
 
-1. Once, start in Visual Studio Code and make the edit there, then scp the file to the remote server and run it there to confirm it works (you can just run bash test.sh on the remote to test it out). Consider having the appropriate scp command in your command history or easily copy-pasteable!
-2. Second, start already logged into a ssh session. Then, make the edit for the task you chose in Vim, then exit Vim and run bash test.sh.
+1. Start in Visual Studio Code and make the edit there, then scp the file to the remote server and run it to confirm it works (you can run bash test.sh on the remote to test it out). Consider having the appropriate scp command in your command history or have it easily copy-pasteable!
+2. Second, start already logged into a ssh session. Then, make the edit for the task you chose in Vim. Exit Vim and run bash test.sh.
 
 #
 ### Time to edit file in Visual Studio Code ~10 seconds.
 ### Time to edit file in VIM editor ~15 seconds
 
-But in strategy 1 there is an additional time of copying the file to remote via scp.
+With the first strategy, there is an additional time of copying the file to remote via scp.
 
 #
 
-### I will prefer the strategy-1 :
+### Lets use the first strategy :
 	1. Visual Studio code is more user firendly than VIM editor
 	2. Less chances of error.
 	3. copy paste is easy in visual studio code.
 
 #
 
-### I will choose strategy-1 but if we have to work on multiple files or project where the file size is big and there are minimal edits then i would choose strategy-2 as in strategy-1 there will be overhead of copying files to remote. If there are more edits then i will choose strategy-1 in any case.
+### If we have to work on multiple files or projects where the file size is big and there are minimal edits , I would use the second strategy since there will be overhead of copying files to remote when using the first strategy. If there are more edits, then I will use the first strategy in any case.
 
