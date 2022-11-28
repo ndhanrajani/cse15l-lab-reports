@@ -37,7 +37,7 @@
 ## Two Potenital strategies
 
 1. Start in Visual Studio Code and make the edit there, then scp the file to the remote server and run it to confirm it works (you can run bash test.sh on the remote to test it out). Consider having the appropriate scp command in your command history or have it easily copy-pasteable!
-2. Second, start already logged into a ssh session. Then, make the edit for the task you chose in Vim. Exit Vim and run bash test.sh.
+2. Make sure you are already logged into a remote computer after having correctly scp'd the file. Make the edit for the task you chose in Vim. Exit Vim and run bash test.sh.
 
 #
 ### Time to edit file in Visual Studio Code ~10 seconds.
